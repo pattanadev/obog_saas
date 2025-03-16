@@ -6,6 +6,11 @@
     font-family: Arial, sans-serif;
 }
 
+.logo-link {
+    text-decoration: none; /* アンダーラインを消す */
+    color: inherit; /* 親要素の色を継承 */
+}
+
 /* ヘッダー */
 .header {
     background: #fff; /* 白背景 */
