@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会員管理</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="menu.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1>SAMPLE</h1>
+            <button class="menu-button" id="menu-toggle">☰</button>
+        </header>
+
+        <div class="container">
+            <!-- サイドバー（ハンバーガーメニュー対応） -->
+            <nav class="sidebar" id="sidebar">
+                <ul>
+                    <li><a href="member.html">会員管理</a></li>
+                    <li><a href="mail.html">メール送信</a></li>
+                    <li><a href="payment.html">支払い管理</a></li>
+                </ul>
+            </nav>
+
+            <!-- メインコンテンツ -->
+            <main class="main-content">
+                <h1>会員一覧</h1>
+
+                <!-- 会員一覧テーブル -->
+                <table class="member-table">
+                    <thead>
+                        <tr>
+                            <th>氏名</th>
+                            <th class="sp-hidden">ふりがな</th>
+                            <th>卒年</th>
+                            <th>学部</th>
+                            <th class="sp-hidden">勤務先</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="profile.html">田中 太郎</a></td><td class="sp-hidden">たなか たろう</td><td>2020</td><td>経済学部</td><td class="sp-hidden">株式会社〇〇</td></tr>
+                        <tr><td>佐藤 花子</td><td class="sp-hidden">さとう はなこ</td><td>2019</td><td>文学部</td><td class="sp-hidden">△△出版社</td></tr>
+                        <tr><td>鈴木 一郎</td><td class="sp-hidden">すずき いちろう</td><td>2018</td><td>法学部</td><td class="sp-hidden">弁護士法人XYZ</td></tr>
+                        <tr><td>高橋 健一</td><td class="sp-hidden">たかはし けんいち</td><td>2017</td><td>工学部</td><td class="sp-hidden">ABCエンジニアリング</td></tr>
+                        <tr><td>山本 美咲</td><td class="sp-hidden">やまもと みさき</td><td>2016</td><td>経営学部</td><td class="sp-hidden">XYZ商事</td></tr>
+                        <tr><td>小林 大輔</td><td class="sp-hidden">こばやし だいすけ</td><td>2015</td><td>情報科学部</td><td class="sp-hidden">ITスタートアップ</td></tr>
+                        <tr><td>加藤 真由</td><td class="sp-hidden">かとう まゆ</td><td>2014</td><td>人文学部</td><td class="sp-hidden">出版社A</td></tr>
+                        <tr><td>中村 優</td><td class="sp-hidden">なかむら ゆう</td><td>2013</td><td>理学部</td><td class="sp-hidden">環境調査会社</td></tr>
+                        <tr><td>藤田 修</td><td class="sp-hidden">ふじた おさむ</td><td>2012</td><td>社会学部</td><td class="sp-hidden">教育NPO</td></tr>
+                        <tr><td>岡田 翔</td><td class="sp-hidden">おかだ しょう</td><td>2011</td><td>経済学部</td><td class="sp-hidden">証券会社</td></tr>
+                        <tr><td>松本 菜々</td><td class="sp-hidden">まつもと なな</td><td>2010</td><td>医学部</td><td class="sp-hidden">市立病院</td></tr>
+                        <tr><td>井上 悠斗</td><td class="sp-hidden">いのうえ ゆうと</td><td>2009</td><td>薬学部</td><td class="sp-hidden">製薬会社</td></tr>
+                        <tr><td>森下 直樹</td><td class="sp-hidden">もりした なおき</td><td>2008</td><td>農学部</td><td class="sp-hidden">食品メーカー</td></tr>
+                        <tr><td>橋本 亮</td><td class="sp-hidden">はしもと りょう</td><td>2007</td><td>経済学部</td><td class="sp-hidden">商社X</td></tr>
+                        <tr><td>石田 里奈</td><td class="sp-hidden">いしだ りな</td><td>2006</td><td>心理学部</td><td class="sp-hidden">カウンセリングセンター</td></tr>
+                        <tr><td>青木 真</td><td class="sp-hidden">あおき まこと</td><td>2005</td><td>工学部</td><td class="sp-hidden">自動車メーカー</td></tr>
+                        <tr><td>山田 修</td><td class="sp-hidden">やまだ おさむ</td><td>2004</td><td>経営学部</td><td class="sp-hidden">金融コンサル</td></tr>
+                        <tr><td>木村 茜</td><td class="sp-hidden">きむら あかね</td><td>2003</td><td>国際学部</td><td class="sp-hidden">外資系企業</td></tr>
+                        <tr><td>竹内 涼</td><td class="sp-hidden">たけうち りょう</td><td>2002</td><td>文学部</td><td class="sp-hidden">新聞社</td></tr>
+                        <tr><td>西村 拓</td><td class="sp-hidden">にしむら たく</td><td>2001</td><td>法学部</td><td class="sp-hidden">裁判所</td></tr>
+                        <tr><td>福田 優希</td><td class="sp-hidden">ふくだ ゆうき</td><td>2000</td><td>情報学部</td><td class="sp-hidden">ITベンチャー</td></tr>
+                    </tbody>
+                </table>
+                <div class="space"></div>
+
+            </main>
+        </div>
+        <!-- フッター -->
+        <footer class="footer">
+            <p>© 2025 SAMPLE 会員管理システム</p>
+        </footer>
+    </div>
+</body>
+</html>

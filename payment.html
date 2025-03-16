@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支払い管理</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="menu.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1>SAMPLE</h1>
+            <button class="menu-button" id="menu-toggle">☰</button>
+        </header>
+
+        <div class="container">
+            <!-- サイドバー（ハンバーガーメニュー対応） -->
+            <nav class="sidebar" id="sidebar">
+                <ul>
+                    <li><a href="member.html">会員管理</a></li>
+                    <li><a href="mail.html">メール送信</a></li>
+                    <li><a href="payment.html">支払い管理</a></li>
+                </ul>
+            </nav>
+
+            <!-- メインコンテンツ -->
+            <main class="main-content">
+                <h1>支払い管理</h1>
+
+                <!-- 支払い管理テーブル -->
+                <table class="payment-table">
+                    <thead>
+                        <tr>
+                            <th>卒年</th>
+                            <th>氏名</th>
+                            <th class="pc-only">メールアドレス</th> <!-- PCのみ表示 -->
+                            <th class="pc-only">電話番号</th> <!-- PCのみ表示 -->
+                            <th class="checkbox-column">チェック</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2020</td><td>田中 太郎</td><td class="pc-only">tanaka@example.com</td><td class="pc-only">090-1234-5678</td><td><input type="checkbox"></td></tr>
+                        <tr><td>2019</td><td>佐藤 花子</td><td class="pc-only">sato@example.com</td><td class="pc-only">080-5678-1234</td><td><input type="checkbox"></td></tr>
+                        <tr><td>2018</td><td>鈴木 一郎</td><td class="pc-only">suzuki@example.com</td><td class="pc-only">070-8765-4321</td><td><input type="checkbox"></td></tr>
+                        <tr><td>2017</td><td>高橋 健一</td><td class="pc-only">takahashi@example.com</td><td class="pc-only">090-3456-7890</td><td><input type="checkbox"></td></tr>
+                        <tr><td>2016</td><td>山本 美咲</td><td class="pc-only">yamamoto@example.com</td><td class="pc-only">080-6543-2109</td><td><input type="checkbox"></td></tr>
+                        <tr><td>2015</td><td>小林 大輔</td><td class="pc-only">kobayashi@example.com</td><td class="pc-only">070-9876-5432</td><td><input type="checkbox"></td></tr>
+                        <tr><td>2014</td><td>加藤 真由</td><td class="pc-only">kato@example.com</td><td class="pc-only">090-2345-6789</td><td><input type="checkbox"></td></tr>
+                        <tr><td>2013</td><td>中村 優</td><td class="pc-only">nakamura@example.com</td><td class="pc-only">080-7654-3210</td><td><input type="checkbox"></td></tr>
+                        <tr><td>2012</td><td>藤田 修</td><td class="pc-only">fujita@example.com</td><td class="pc-only">070-8765-4321</td><td><input type="checkbox"></td></tr>
+                        <tr><td>2011</td><td>岡田 翔</td><td class="pc-only">okada@example.com</td><td class="pc-only">090-3456-7890</td><td><input type="checkbox"></td></tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+
+        <!-- フッター -->
+        <footer class="footer">
+            <p>© 2025 SAMPLE 会員管理システム</p>
+        </footer>
+    </div>
+</body>
+</html>

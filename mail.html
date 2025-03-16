@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会員管理</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="menu.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1>SAMPLE</h1>
+            <button class="menu-button" id="menu-toggle">☰</button>
+        </header>
+
+        <div class="container">
+            <!-- サイドバー（ハンバーガーメニュー対応） -->
+            <nav class="sidebar" id="sidebar">
+                <ul>
+                    <li><a href="member.html">会員管理</a></li>
+                    <li><a href="mail.html">メール送信</a></li>
+                    <li><a href="payment.html">支払い管理</a></li>
+                </ul>
+            </nav>
+
+            <!-- メインコンテンツ -->
+            <main class="main-content">
+                <h1>メール送信</h1>
+
+                <div class="mail-form">
+                    <label for="title" class="form-label">タイトル</label>
+                    <input type="text" id="title" class="form-input" placeholder="メールのタイトルを入力">
+
+                    <label for="message" class="form-label">本文</label>
+                    <textarea id="message" class="form-textarea" placeholder="メールの本文を入力"></textarea>
+
+                    <label class="form-label">送信対象選択</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="recipient" value="all" checked> 全会員</label>
+                        <label><input type="radio" name="recipient" value="unpaid"> 会費未納者</label>
+                    </div>
+
+
+                    <label for="file-upload" class="form-label">添付ファイル</label>
+                    <input type="file" id="file-upload" class="form-file-input">
+
+                    <button class="send-button">送信</button>
+                </div>
+            </main>
+        </div>
+
+        <!-- フッター -->
+        <footer class="footer">
+            <p>© 2025 SAMPLE 会員管理システム</p>
+        </footer>
+    </div>
+</body>
+</html>
